@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('git repo & clean') {
             steps {
-               bat "rmdir  /s /q springboot-jenkins"
+               //bat "rmdir  /s /q springboot-jenkins"
                 bat "git clone https://github.com/charan61/springboot-jenkins.git"
                 bat "mvn clean -f TicketBookingServiceJunitTesting"
             }
